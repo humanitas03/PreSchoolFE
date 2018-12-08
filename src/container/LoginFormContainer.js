@@ -13,9 +13,9 @@ import LineButtons from '../shared/LineButtons';
 @autobind
 class LoiginFormContainer extends Component{
 
-    onRouteUser(user){
+    onRouteUser(userId){
         const {history} = this.props;
-        history.push(`/front/user/${user.id}`);
+        history.push(`/front/user/${userId}`);
     }
 
 
@@ -40,9 +40,9 @@ class LoiginFormContainer extends Component{
         .then((response)=>{
             console.log(response.data); //정상적이라면 아이디를 받아옵니다.
             //선생님 정보를 받아와서 state 변화
-            this.props.userAction.findUser(response.data);
+            // this.props.userAction.findUser(response.data);
         }) // Step 1-2
-        .then(this.onRouteUser(response.data))
+        .then(this.onRouteUser('test'))
         }
 
        

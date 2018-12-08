@@ -8,18 +8,12 @@ const devServerProperties = {
     env: 'development',
 
     proxy: {
-        '/bid': {
-            target: 'httep://localhost:8080',
-            secure: false,
-        },
         '/user': {
-            target: 'httep://localhost:8080',
-            secure: false,
-        },
-        '/item': {
-            target: 'httep://localhost:8080',
-            secure: false,
+            target: 'http://kei890.iptime.org:8080/school/',
+            secure: false
+            //changeOrigin: true
         }
+        
     }
 }
 

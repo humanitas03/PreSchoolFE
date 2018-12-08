@@ -16,7 +16,7 @@ function signInUser(user) {
 }
 
 function findUser(userId){
-  return axios.get(`${basePath}/users/${userId}`)
+  return axios.get(`${basePath}/teacher/${userId}`)
     .then((response) => response.data);
 }
 

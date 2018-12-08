@@ -1,5 +1,5 @@
 
-import loginApi from '../api/userApi';
+import userApi from '../api/userApi';
 import { actionType } from '../reducer/userReducer';
 
 function findUser(id) {
@@ -22,7 +22,7 @@ function setUserProp(propName, value) {
 }
 
 function loginUser(user) {
-  return () => loginApi.signInUser(user);
+  return () => userApi.signInUser(user);
 }
 
 export default {

@@ -9,7 +9,7 @@ const Routes = () => (
     <Switch>
       <Redirect exact from="/" to="/front/login"/>
       <Route exact path="/front/login" component={LoginFormContainer} />
-      <Route exact path='/front/user/:userId' component={MainViewContainer} />
+      <Route path='/front/user/:userId?' component={MainViewContainer} />
     </Switch>
   </BrowserRouter>
 );
