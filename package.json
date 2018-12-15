@@ -4,7 +4,7 @@
   "description": "KID",
   "author": "WEB_2018",
   "scripts": {
-    "start": "webpack-dev-server --config config/webpack.devServer.js --inline --progress --host 0.0.0.0 --port 9090",
+    "start": "webpack-dev-server --config config/webpack.devServer.js --inline --progress --host 0.0.0.0 --port 3000",
     "build_app": "webpack --config config/webpack.prod.js --progress --profile --bail"
   },
   "dependencies": {

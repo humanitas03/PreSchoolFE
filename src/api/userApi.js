@@ -10,6 +10,7 @@ function signInUser(user) {
   
   return axios.post(`${basePath}/user`, user)
         .then((response) => {
+            
             console.log("getResponse : ", response);
             return response
         });
