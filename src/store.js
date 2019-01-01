@@ -8,7 +8,8 @@ import userReducer from './reducer/userReducer';
 const rootReducer = combineReducers({
   //
   routing: routerReducer,
-  userState : userReducer
+  userState : userReducer,
+  polioesState : portPolioListReducer
   //add module
 });
 

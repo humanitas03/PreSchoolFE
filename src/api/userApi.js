@@ -15,11 +15,11 @@ function signInUser(user) {
         });
 }
 
+//
 function findUser(userId){
   return axios.get(`${basePath}/teacher/${userId}`)
     .then((response) => response.data);
 }
-
 
 export default {
  signInUser,
